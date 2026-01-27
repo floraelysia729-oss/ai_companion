@@ -76,7 +76,7 @@ const Live2DViewer = () => {
             if (!modelRef.current) return;
 
             const expressions = [
-                "Happy", "Normal"
+                "Happy", "Normal", "Sad"
             ];
 
             const randomExpression = expressions[Math.floor(Math.random() * expressions.length)];
@@ -88,7 +88,7 @@ const Live2DViewer = () => {
             }
         };
 
-        const intervalId = setInterval(playExpression, 4000);
+        const intervalId = setInterval(playExpression, 6000);
 
         return () => {
             clearInterval(intervalId);
