@@ -33,3 +33,7 @@ node_modules/
 *.ckpt
 *.onnx
 ai_modules/models/
+.env
+__pycache__/
+*.pyc
+.vscode/
